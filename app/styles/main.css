@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-family: Yu Gothic UI, Microsoft JhengHei;
+    overflow: hidden;
+}
+
+text {
+    fill: white;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.Menus_group {
+    position: absolute;
+    display: none;
+    background-color: #fefefe;
+    border-color: #d6dbe1;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+ul {
+    font-family: Yu Gothic UI, Microsoft JhengHei;
+    list-style: none;
+    font-size: 11pt;
+}
+
+.menus> li {
+    /*text-decoration: underline;*/
+}
+
+.menus> li> a {
+    /*margin: 0px 0px 0px -36px;*/
+    color: #272727;
+}
+
+.menus> li> a:hover {
+    /*margin: 0px 0px 0px -36px;*/
+    color: #488355;
+    text-decoration: none;
+}
+
+.menus {
+    width: 100%;
+    list-style-image: url("../images/p-01.png");
+    margin: 0px 2px 0px 2px;
+    padding: 0px 0px 0px 25px;
+}
+
+.menus> li> ul> li {
+    margin: 0px 0px 0px -20px;
+}
+
+.menus_lv2 {
+    text-align: left;
+    background-color: #fefefe;
+    border-color: #d6dbe1;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+    left: 90px;
+    top: 35px;
+    width: 120px;
+    list-style-image: url("../images/cir-1.png");
+}
+
+.sNodes {
+    /*    fill: dodgerblue;
+    
+    background: url("../images/star_01.png") no-repeat;*/
+}
+
+.bNodes {}
+
+#progressbar {
+    width: auto;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.ui-progressbar-value {
+    background: url("../images/animation.gif");
+}
+
+#rocketwagon-canvas {
+    z-index: -999;
+}
+
+.line {
+    stroke: white;
+    stroke-width: 1.5px;
+}
+
+.searchbar {
+    display: inline;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.twitter-typeahead {
+    bottom: 20px;
+}
+
+#NodeText,
+.typeahead,
+.tt-query,
+.tt-hint {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 15pt;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 1px 12px;
+    width: 396px;
+}
+
+.typeahead {
+    background-color: #FFFFFF;
+}
+
+#NodeText:focus,
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.tt-hint {
+    color: #999999;
+}
+
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+    overflow-y: scroll;
+}
+
+.tt-suggestion {
+    font-size: 15pt;
+    line-height: 24px;
+    padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+#o-wrapper {
+    position: absolute;
+}
+
+#user_Function {
+    display: inline;
+    top: 0px;
+}
+
+#tooltip {
+    background: #EBE7E7;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #9B9898;
+    height: 40px;
+}
+
+#star,
+#star2,
+#star3,
+#star4 {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.skilLV {
+    position: absolute;
+    right: 1%;
+}
+
+#map {
+    cursor: pointer;
+}
+
+line {
+    stroke-width: 2px;
+}
+
+marker[class=sNodes] line[class=sNodes] {
+    stroke: #FFF143;
+}
+
+line[class=sNodes] {
+    stroke: #FFF143;
+}
+
+#zoomPanel {
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+
+#zoom_in {
+    width: 30px;
+    height: 30px;
+}
+
+#zoom_out {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#CR,
+#DA,
+#media_edu,
+#practice,
+#commponent {
+    cursor: pointer;
+}
+
+#m_2 {
+    cursor: default;
+}
+
+.result {
+    display: block;
+    font-size: 15pt;
+}
+
+#scrollable-dropdown-menu .tt-dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+text[class='bNodes'] {
+    font-size: 15pt;
+}
+
+text[class='sNodes'] {
+    font-size: 15pt;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.accordion.active,
+.accordion:hover {
+    background-color: #ddd;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+
+div.panel.show {
+    display: block !important;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
